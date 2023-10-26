@@ -1,0 +1,4 @@
+#lista de usuarios
+nombre1	apellido1
+nombre2	apellido2
+
