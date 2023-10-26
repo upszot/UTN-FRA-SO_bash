@@ -2,8 +2,12 @@
 
 LISTA=$1
 
-for i in `cat $LISTA | awk '{print $1}'| grep -v ^#`
+IFS=$'\n'
+for i in `cat $LISTA | awk '{print $1" "$2}'| grep -v ^#`
 do
-	echo "Valor: $i"
+	NOMBRE=$(echo  $i |awk '{print $1}')
+	APELLIDO=$(echo  $i |awk '{print $2}')
+	echo "Valor: $i "
+	echo " apellido: $APELLIDO nombre: $NOMBRE"
 
 done
