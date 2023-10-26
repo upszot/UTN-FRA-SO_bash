@@ -1,0 +1,3 @@
+#lista de usuarios
+/bin/bash:programador3:usuario del programador 3:desarrollo
+/bin/bash:lider:usuario del lider:coordinador
