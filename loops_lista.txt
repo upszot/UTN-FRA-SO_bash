@@ -1,6 +1,0 @@
-#lista de usuarios
-nombre1	apellido1
-nombre2	apellido2 #datos del usuario 2
-nombre3	apellido #
-
-
