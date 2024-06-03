@@ -28,31 +28,33 @@ Bash (Bourne Again SHell) es el intérprete de comandos predeterminado en muchas
   - `$?`: código de salida del último comando
   - `$!`: PID del último proceso ejecutado en segundo plano
   - `$_`: último argumento del último comando ejecutado
+
+  > Aca puede ver un [Ejemplo de Variables y parametros](./variables/variables_parametros.sh)
+
 - [ ] **Bucles**
   - Bucle `for`:
-    - Iteración sobre listas: `for valor in 1 2 3`
-    - Iteración con comandos: `for linea in $(cat archivo)`
+    - [Iteración sobre listas: ](./Bucle_for/1_for_lista.sh) `for valor in 1 2 3`
+    - [Iteración con comandos:](./Bucle_for/2_for_cmd_lista.sh) `for linea in $(cat archivo)`
   - Bucle `while`:
-    - Repetición basada en condiciones simples
-    - Repetición basada en comandos: `while read linea; do ... done < archivo`    
+    - [Repetición basada en condiciones simples](./Bucle_while/1_while_simple.sh)
+    - [Repetición basada en comandos:](./Bucle_while/2_while_cmd_lista.sh) `while read linea; do ... done < archivo`    
 - [ ] **Condicionales**
-  - `if`: condiciones simples
-  - Condicional anidado: `if-elif-else`
-  - Condicionales múltiples: `if [[ condición1 && condición2 ]]; then`
-  - `case`: para múltiples opciones
+  - [condiciones simples y Condicional anidado:](./Condicionales/if_simple.sh) `if`,  `if-elif-else`
+  - [Condicionales múltiples:](./Condicionales/if_multiple.sh) `if [[ condición1 && condición2 ]]; then`
+  - [para múltiples opciones:](./Condicionales/case_example.sh) `case`
 - [ ] **Menús y Argumentos**
-  - `select`: creación de menús interactivos
-  - `getopts` y `OPTARG`: manejo de argumentos de línea de comandos
+  - [creación de menús interactivos:](./menu/select_menu.sh) `select`
+  - [manejo de argumentos de línea de comandos:](./menu/getopts.sh) `getopts` y `OPTARG`
 
 
 ### **Ejemplos de Bash Script Avanzados**
-- [ ] **Variables avanzadas**
+- [ ] [**Variables avanzadas**](./bash_avanzado/vectores_matrices.sh)
   - Vectores (Arrays) para listas
   - Matrices para estructuras más complejas
-- [ ] **Funciones**
+- [ ] [**Funciones**](./bash_avanzado/funciones.sh)
   - Definir y usar funciones
   - Pasar parámetros a funciones
-- [ ] **Entrada/Salida**
+- [ ] [**Entrada/Salida**](./bash_avanzado/entradas_salidas.sh)
   - Redireccionamiento de entrada y salida (`>`, `>>`, `<`, `|`)
   - Tubos (`|`): conexión de comandos
   - Control de errores y códigos de salida

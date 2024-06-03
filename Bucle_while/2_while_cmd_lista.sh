@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo
+echo "Ejecute: ./2_while_cmd_lista.sh 2_while_cmd_lista.txt" 
+echo
+
 ARCHIVO=$1
 
 #Contador de usuarios creados
