@@ -29,7 +29,7 @@ Bash (Bourne Again SHell) es el intérprete de comandos predeterminado en muchas
   - `$!`: PID del último proceso ejecutado en segundo plano
   - `$_`: último argumento del último comando ejecutado
 
-  > Aca puede ver un [Ejemplo de Variables y parametros](./variables/variables_parametros.sh)
+  > Aca puede ver un [Ejemplo de Variables y parametros](./variables_parametros/variables_parametros.sh)
 
 - [ ] **Bucles**
   - Bucle `for`:

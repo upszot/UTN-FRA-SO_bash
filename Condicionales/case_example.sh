@@ -21,14 +21,11 @@ esac
 letra="c"
 
 case $letra in
-    "a" | "b")
-        echo "La letra es a o b"
+    "a")
+        echo "La letra es a"
         ;;
-    "c")
-        echo "La letra es c"
-        ;;
-    "d" | "e")
-        echo "La letra es d o e"
+    "b" | "c")
+        echo "La letra es b o c"
         ;;
     *)
         echo "Letra desconocida"

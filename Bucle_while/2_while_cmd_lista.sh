@@ -15,7 +15,7 @@ IFS=':'
 while read SH USUARIO COMENTARIO GRUPO RESTO; do
     if [[ ! ${SH} =~ ^# ]]; then
       echo "se ejecutara ->  useradd -m -s ${SH} -c \"${COMENTARIO}\" -g ${GRUPO} ${USUARIO}"
-      sudo useradd -m -s ${SH} -c "${COMENTARIO}" -g ${GRUPO} ${USUARIO}
+      echo "sudo useradd -m -s ${SH} -c "${COMENTARIO}" -g ${GRUPO} ${USUARIO}"
       let CANT=CANT+1
     fi
 done < ${ARCHIVO}
