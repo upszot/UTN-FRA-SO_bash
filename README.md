@@ -65,4 +65,5 @@ Bash (Bourne Again SHell) es el intérprete de comandos predeterminado en muchas
   
 
 ## Extras
-- Manual de bash-scripting
+- [Manual de bash-scripting](https://github.com/upszot/UTN-FRA_SO_onBording/tree/master/Extras)
+
