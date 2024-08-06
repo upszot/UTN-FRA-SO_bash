@@ -23,7 +23,8 @@ echo "===== Control de errores y códigos de salida ====="
 
 # Control de errores y códigos de salida
 # Intente eliminar un archivo que no existe
-rm archivo_que_no_existe.txt 2> /dev/null
+#rm archivo_que_no_existe.txt 2> /dev/null
+rm archivo_que_no_existe.txt 
 if [ $? -ne 0 ]; then
     echo "Error: No se pudo eliminar el archivo."
 fi

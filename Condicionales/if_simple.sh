@@ -4,8 +4,8 @@ echo "===== Condicional if: condiciones simples ====="
 
 # Notación Doble [[ ]] | Notación simple [ ]
 # -------------|-----------------
-#     ==       |      -eq
-#     !=       |      !=
+#     ==       |     -eq
+#     !=       |     -ne
 #     <        |     -lt
 #     <=       |     -le
 #     >        |     -gt

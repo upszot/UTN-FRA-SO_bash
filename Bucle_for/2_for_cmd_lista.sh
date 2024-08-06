@@ -8,12 +8,11 @@ LISTA=$1
 
 ANT_IFS=$IFS
 IFS=$'\n'
-for i in `cat $LISTA | awk -F ':' '{print $1" "$2}'| grep -v ^#`
+for LINEA in `cat $LISTA |  grep -v ^#`
 do
-	USUARIO=$(echo  $i |awk '{print $1}')
-	GRUPO=$(echo  $i |awk '{print $2}')
+	USUARIO=$(echo  $LINEA |awk -F ':' '{print $1}')
+	GRUPO=$(echo  $LINEA |awk -F ':' '{print $2}')
 	echo "sudo useradd -m -s /bin/bash -g $GRUPO $USUARIO"
 done
-
 IFS=$ANT_IFS
 
